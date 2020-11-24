@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
 	<metadata>
 		<id>winlibs-llvm-free</id>
-		<version>10.2.0.800-r3</version>
+		<version>10.2.0.8003</version>
 		<title>WinLibs [GCC:10.2.0 MinGW-w64:8.0.0 R3]</title>
 		<owners>SteelShot</owners>
 		<summary>In short: it's a free C and C++ compiler for Microsoft Windows</summary>
