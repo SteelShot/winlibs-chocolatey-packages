@@ -21,7 +21,7 @@ This build corresponds to the 1st example given below. To be sure which componen
 - [WinLibs Github releases page](https://github.com/brechtsanders/winlibs_mingw/releases)
 - [WinLibs website's downloads](http://winlibs.com/#download-release)
 
-The choco version order will always follow WinLib's build names: GCC -> LLVM (if applicable) -> MinGW-w64 -> Release, unless WinLibs it changes them!
+**The choco version order will always follow WinLib's build names: GCC -> LLVM (if applicable) -> MinGW-w64 -> Release, unless WinLibs changes them!**
 
 ### Example 1020.1100.800.3
 - GCC version is 10.2.0
