@@ -2,20 +2,20 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
 	<metadata>
 		<id>winlibs</id>
-		<version>10.2.0-11.0.0-8.0.0-r3</version>
-		<title>WinLibs GCC:10.2.0 LLVM/Clang:11.0.0 MinGW-W64:8.0.0 Release 3</title>
+		<version>10.2.0.1100800-r3</version>
+		<title>WinLibs [GCC:10.2.0 LLVM/Clang:11.0.0 MinGW-w64:8.0.0 R3]</title>
 		<owners>SteelShot</owners>
 		<summary>In short: it's a free C and C++ compiler for Microsoft Windows</summary>
 		<description>The goal of winlibs.com is to provide a collection of tools and libraries targetting native Microsoft Windows to be used on Microsoft Windows</description>
 		<tags>winlibs c c++ compiler gcc mingw mingw-w64 llvm clang development posix seh dwarf x86_64 i686</tags>
-		<packageSourceUrl></packageSourceUrl>
+		<packageSourceUrl>https://github.com/SteelShot/winlibs-chocolatey-packages</packageSourceUrl>
 		
 		<authors>Brecht Sanders</authors>
 		<projectUrl>http://winlibs.com/</projectUrl>
 		<licenseUrl>http://winlibs.com/#License</licenseUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<docsUrl>http://winlibs.com/</docsUrl>
-		<releaseNotes>[Release Notes](https://github.com/brechtsanders/winlibs_mingw/releases/tag/10.2.0-11.0.0-9.0.0-r3)</releaseNotes>
+		<releaseNotes>[WinLibs GCC:10.2.0 LLVM/Clang:11.0.0 MinGW-w64:8.0.0 R3](https://github.com/brechtsanders/winlibs_mingw/releases/tag/10.2.0-11.0.0-9.0.0-r3)</releaseNotes>
 		<projectSourceUrl>https://github.com/brechtsanders/winlibs_mingw</projectSourceUrl>
 		<bugTrackerUrl>https://github.com/brechtsanders/winlibs_mingw/issues</bugTrackerUrl>
 	</metadata>

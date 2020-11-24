@@ -1,0 +1,1 @@
+powershell "choco pack ./full/winlibs.nuspec;choco pack ./llvm-free/winlibs-llvm-free.nuspec"
