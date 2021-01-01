@@ -1,13 +1,22 @@
+# WinLibs' GitHub Release
+$Release = "10.2.0-11.0.0-8.0.0-r5"
+
+# ZipPackage's URL bits
 $UrlBase = 'https://github.com/brechtsanders/winlibs_mingw/releases/download'
-$UrlRelease = '10.2.0-11.0.0-9.0.0-r3'
+$32      = "i686-posix-dwarf"
+$64      = "x86_64-posix-seh"
+$vers    = $Release.Split('-')
+
+# Checksum Type
 $CRCType = 'sha256'
 
-$packageName = 'winlibs-llvm-free'
-$url = "$UrlBase/$UrlRelease/winlibs-i686-posix-dwarf-gcc-10.2.0-mingw-w64-8.0.0-r3.zip"
-$url64 = "$UrlBase/$UrlRelease/winlibs-x86_64-posix-seh-gcc-10.2.0-mingw-w64-8.0.0-r3.zip"
-$checksum = 'B329671BC95F7CD486BC3A40DB16C14F787355EE750554539C6396B136DCA699'
-$checksum64 = '30DB4461D116B42D0A60A4A7ED76FD1F791F140A094B2C950EEC55771BE5173E'
-$installDir = Split-Path -parent $MyInvocation.MyCommand.Definition
+# ChocolateyZipPackage's bits
+$packageName = 'winlibs'
+$url         = "$UrlBase/$Release/winlibs-$32-gcc-$($vers[0])-mingw-w64-$($vers[2])-$($vers[3]).zip"
+$url64       = "$UrlBase/$Release/winlibs-$64-gcc-$($vers[0])-mingw-w64-$($vers[2])-$($vers[3]).zip"
+$checksum    = (([char[]](Invoke-WebRequest -Uri "$url.$CRCType" -UseBasicParsing).Content) -join '').Split(' ')[0]
+$checksum64  = (([char[]](Invoke-WebRequest -Uri "$url64.$CRCType" -UseBasicParsing).Content) -join '').Split(' ')[0]
+$installDir  = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
     packageName     = $packageName

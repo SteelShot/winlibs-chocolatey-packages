@@ -17,7 +17,7 @@ Each official non pre-release build of WinLibs contains a unique name like:
 
 
 This build corresponds to the 1st example given below. To be sure which component versions are used as these versions can be amiguous.
-(**1020 does not mean that it is 10.2.0 as it also could be 1.0.20 or 1.20.0**) check with the official resources below.
+(**1020 does not mean that it is 10.2.0 as it also could be 1.0.20**) check with the official resources below.
 - [WinLibs Github releases page](https://github.com/brechtsanders/winlibs_mingw/releases)
 - [WinLibs website's downloads](http://winlibs.com/#download-release)
 
