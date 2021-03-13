@@ -5,31 +5,29 @@ Repository for hosting WinLibs Chocolatey packages.
 
 [WinLibs without LLVM](https://chocolatey.org/packages/winlibs-llvm-free)
 
-# Why the weird choco versioning?
-- Chocolatey does not allow for composite semantic versions like 10.2.0-11.0.0-8.0.0-3 or custom strings as versions
-- WinLibs does not use a single non composite semantic version
+# Why the big versioning change?
+Previous chocolatey packages were trying to match versioning of official WinLibs' versioning.
+Honestly that was a complete pile of sh*t and a mess to do! 
 
-The versioning is composed of all 4 components of WinLibs (Apart llvm-free package as it has no LLVM bundled: 3 parts)
+If a WinLibs package had a hotfix version release i.e Release-X (Hotfix Y), 
+due to chocolatey not allowing semantic 2.0.0 uncomliant versioning(Which is fine, there has to be conistency),
+the chocolatey packages' versioning was unable to follow WinLibs' versioning.
 
-Each official non pre-release build of WinLibs contains a unique name like: 
+# How to **currently** match WinLibs' versioning with Chocolatey packages' versioning?
+This time it is simplyfied. The MAJOR.MINOR.PATCH versioning will follow WinLibs' GCC -> LLVM (is applicable) -> MinGW-w64 release format.
+The .PATCH label will be used for the Chocolatey package.
 
-> **GCC 10.2.0 + LLVM/Clang/LLD/LLDB 11.0.0 + MinGW-w64 8.0.0 - release 3**
+For the actual release and full WinLibs' component versions, you will need to check the Release Notes under the Chocolatey package or check the releases page in this repository. They will be linked WinLibs' GitHub releases page
 
+You can checkout more about these labels under [semantic versioning 2.0.0](https://semver.org/spec/v2.0.0.html)
 
-This build corresponds to the 1st example given below. To be sure which component versions are used as these versions can be amiguous.
-(**1020 does not mean that it is 10.2.0 as it also could be 1.0.20**) check with the official resources below.
-- [WinLibs Github releases page](https://github.com/brechtsanders/winlibs_mingw/releases)
-- [WinLibs website's downloads](http://winlibs.com/#download-release)
+### Example 10.11.8.0
+- Major GCC version is 10
+- Major LLVM version is 11
+- Major MinGW-w64 version is 8
+- 0 corresponds to chocolatey packages' build number
 
-**The choco version order will always follow WinLib's build names: GCC -> LLVM (if applicable) -> MinGW-w64 -> Release, unless WinLibs changes them!**
-
-### Example 1020.1100.800.3
-- GCC version is 10.2.0
-- LLVM version is 11.0.0
-- MinGW-w64 version is 8.0.0
-- Release 3
-
-### Example 1020.800.3 (LLVM Free)
-- GCC version is 10.2.0
-- MinGW-w64 version is 8.0.0
-- Release 3
+### Example 10.8.0 (llvm-free package)
+- Major GCC version is 10
+- Major MinGW-w64 version is 8
+- 0 corresponds to chocolatey packages' build number

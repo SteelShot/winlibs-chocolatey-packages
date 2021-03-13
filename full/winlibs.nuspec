@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
 	<metadata>
 		<id>winlibs</id>
-		<version>1020.1100.800.51</version>
-		<title>WinLibs [GCC:10.2.0 LLVM/Clang:11.0.0 MinGW-w64:8.0.0 R5]</title>
+		<version>10.11.8.0</version>
+		<title>WinLibs [GCC:10.2.0 LLVM/Clang:11.0.0 MinGW-w64:8.0.0 R8]</title>
 		<owners>SteelShot</owners>
 		<summary>In short: it's a free C and C++ compiler for Microsoft Windows</summary>
 		<description>The goal of winlibs.com is to provide a collection of tools and libraries targetting native Microsoft Windows to be used on Microsoft Windows</description>
@@ -15,7 +15,7 @@
 		<licenseUrl>http://winlibs.com/#license</licenseUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<docsUrl>http://winlibs.com/</docsUrl>
-		<releaseNotes>[WinLibs GCC:10.2.0 LLVM/Clang:11.0.0 MinGW-w64:8.0.0 R5](https://github.com/brechtsanders/winlibs_mingw/releases/tag/10.2.0-11.0.0-8.0.0-r5)</releaseNotes>
+		<releaseNotes>[WinLibs GCC:10.2.0 LLVM/Clang:11.0.0 MinGW-w64:8.0.0 R8](https://github.com/brechtsanders/winlibs_mingw/releases/tag/10.2.0-11.0.0-8.0.0-r8)</releaseNotes>
 		<projectSourceUrl>https://github.com/brechtsanders/winlibs_mingw</projectSourceUrl>
 		<bugTrackerUrl>https://github.com/brechtsanders/winlibs_mingw/issues</bugTrackerUrl>
 	</metadata>
