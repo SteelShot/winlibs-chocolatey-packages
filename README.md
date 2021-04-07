@@ -14,10 +14,10 @@ due to chocolatey not allowing semantic 2.0.0 uncomliant versioning(Which is fin
 the chocolatey packages' versioning was unable to follow WinLibs' versioning.
 
 # How to **currently** match WinLibs' versioning with Chocolatey packages' versioning?
-This time it is simplyfied. The MAJOR.MINOR.PATCH versioning will follow WinLibs' GCC -> LLVM (is applicable) -> MinGW-w64 release format.
-The .PATCH label will be used for the Chocolatey package.
+This time it is simplyfied. The MAJOR.MINOR.PATCH.BUILD versioning will follow WinLibs' GCC -> LLVM (is applicable) -> MinGW-w64 release format.
+The .PATCH/.BUILD (depending on package) label will be used for the Chocolatey package.
 
-For the actual release and full WinLibs' component versions, you will need to check the Release Notes under the Chocolatey package or check the releases page in this repository. They will be linked WinLibs' GitHub releases page
+For the actual release and full WinLibs' component versions, you will need to check the Release Notes under the Chocolatey package's page or check the releases page in this repository. They will link to WinLibs' GitHub releases page, where more information is given.
 
 You can checkout more about these labels under [semantic versioning 2.0.0](https://semver.org/spec/v2.0.0.html)
 
