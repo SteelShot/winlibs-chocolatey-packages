@@ -1,4 +1,4 @@
-# winlibs-chocolatey-packages
+# winlibs-chocolatey-packages (eol/abandoned/unsupported)
 Repository for hosting WinLibs Chocolatey packages.
 
 [WinLibs](https://chocolatey.org/packages/winlibs)
